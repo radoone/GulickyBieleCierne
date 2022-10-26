@@ -37,9 +37,6 @@ for (i = 0; i < 1000; i++) {
     vrece200_rozne++;
   }
 
-  //document.querySelector('#vrece100').innerHTML = vrece100
-  //document.querySelector('#vrece100').innerHTML = vrece100
-  //document.querySelector('#vrece100').innerHTML = vrece100
 }
 console.log("vreco100 " + vrece100_rovnake/i * 100+ " "+vrece100_rozne/i*100) ;
 console.log("vreco200 " + vrece200_rovnake/i * 100+ " "+vrece200_rozne/i*100) ;
