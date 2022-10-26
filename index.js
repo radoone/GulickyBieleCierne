@@ -18,7 +18,7 @@ let pravdepodobnost_vrece100_lava_cierna;
 let pravdepodobnost_vrece100_prava_cierna;
 
 let i = 0
-for (i = 0; i < 10; i++) {
+for (i = 0; i < 1000; i++) {
   let gulicka1_vrece100 = vrece100.random();
   let gulicka2_vrece100 = vrece100.random();
   let gulicka1_vrece200 = vrece200.random();
@@ -50,6 +50,8 @@ document.querySelector('#rovnake100').innerHTML = vrece100_rovnake/i * 100
 document.querySelector('#rovnake200').innerHTML = vrece200_rovnake/i * 100
 document.querySelector('#rozne100').innerHTML = vrece100_rozne/i * 100
 document.querySelector('#rozne200').innerHTML = vrece200_rozne/i * 100
+document.querySelector('#pocet').innerHTML = i
+
 
 
 
