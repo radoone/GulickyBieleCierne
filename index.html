@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
   </head>
   <body>
-   <span>Pocet opakovani:</span> <span id="pocet"></span>
+    <span>Pocet opakovani:</span> <span id="pocet"></span>
 
-
-
-
-
- 
-
-      <table class="styled-table">
+    <table>
       <thead>
-  <tr>
-    <th>Gulicky rovnake %</th>
-    <th>Gulicky rozne % </th>
-   
-  
-  </tr>
-      </thead><tbody>
-  <tr>
-    <th>Vrece 100</th>
-    
-    <td id="rovnake100"> 0</td>
-    
-    <td id="rozne100"></td>
-
-    
-  </tr>
-  <tr>
-    <th>Vrece200</th>
-    <td id="rovnake200"></td>
-    <td id="rozne200"></td>
- 
-  </tr>
-
-  <tbody>
-   </table>
+        <tr>
+          <th></th>
+          <th>rovnake %</th>
+          <th>rozne %</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Vrece 100</th>
+          <td id="rovnake100">0</td>
+          <td id="rozne100"></td>
+        </tr>
+        <tr>
+          <th>Vrece 200</th>
+          <td id="rovnake200"></td>
+          <td id="rozne200"></td>
+        </tr>
+      </tbody>
+    </table>
 
     <script src="src/script.js"></script>
   </body>
