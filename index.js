@@ -21,8 +21,7 @@ let vrece200_rozne = 0;
 let i = 0;
 const data_rozne_100 = [];
 const data_rozne_200 = [];
-for (i = 0; i < 20000; i++) {
-
+for (i = 1; i <= 91000; i++) {
   let random100_1 
   let random100_2 
 do {
@@ -40,12 +39,10 @@ random200_2 = Math.floor(Math.random() * vrece200.length)
 
 }
 while (random200_1==random200_2);
-
-
   let gulicka1_vrece100 = vrece100[random100_1];
   let gulicka2_vrece100 = vrece100[random100_2];
-  let gulicka1_vrece200 = vrece200.random();
-  let gulicka2_vrece200 = vrece200.random();
+  let gulicka1_vrece200 = vrece200[random200_1];
+  let gulicka2_vrece200 = vrece200[random200_2];
 
 
   if (gulicka1_vrece100 === gulicka2_vrece100) {
@@ -59,7 +56,7 @@ while (random200_1==random200_2);
   } else {
     vrece200_rozne++;
   }
-  if (i > 10000) {
+  if (i > 40000) {
     data_rozne_100.push({ y: (vrece100_rozne / i) * 100, x: i });
     data_rozne_200.push({ y: (vrece200_rozne / i) * 100, x: i });
   }
