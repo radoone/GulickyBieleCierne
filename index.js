@@ -1,22 +1,23 @@
-Array.prototype.random = function () {
-  return this[Math.floor(Math.random() * this.length)];
-};
 
-const vrece100 = [...Array(100).keys()].map((i) => (i + 1) % 2);
-const vrece200 = [...Array(200).keys()].map((i) => (i + 1) % 2);
+
+const vrece100 = [...Array(100).keys()].map((i) => (i + 1) % 2)
+.map(value => ({ value, sort: Math.random() }))
+.sort((a, b) => a.sort - b.sort)
+.map(({ value }) => value)
+
+
+const vrece200 = [...Array(200).keys()].map((i) => (i + 1) % 2)
+.map(value => ({ value, sort: Math.random() }))
+.sort((a, b) => a.sort - b.sort)
+.map(({ value }) => value)
+
+
 
 let vrece100_rovnake = 0;
 let vrece100_rozne = 0;
 
 let vrece200_rovnake = 0;
 let vrece200_rozne = 0;
-let pravdepodobnost_vrece100_rovnake;
-let pravdepodobnost_vrece100_rozne;
-let pravdepodobnost_vrece100_lava_biela;
-let pravdepodobnost_vrece100_prava_biela;
-let pravdepodobnost_vrece100_lava_cierna;
-let pravdepodobnost_vrece100_prava_cierna;
-
 let i = 0;
 const data_rozne_100 = [];
 const data_rozne_200 = [];
